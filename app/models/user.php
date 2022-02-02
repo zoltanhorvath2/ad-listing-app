@@ -1,6 +1,10 @@
 <?php
 
-class User
+class User extends Model
 {
   
+  public function getAllUsers(){
+    return $this->read('SELECT * FROM users');
+  }
+
 }
