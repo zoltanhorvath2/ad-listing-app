@@ -1,11 +1,11 @@
 <?php
 
-class Home 
+class Users 
 {
 
-  public function index(): void
+  public function index()
   {
-    $this->view('home');
+    $this->view('users');
   }
 
   public function view(string $view): void
