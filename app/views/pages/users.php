@@ -1,10 +1,10 @@
-<?php $this->view('layouts/head'); ?>
+<?php $this->view('layouts/head', $data); ?>
 <?php $this->view('layouts/navbar'); ?>
 
     <!-- MAIN SECTION -->
 
     <section>
-      Users
+      <?= $data['page_title']?>
     </section>
 
     <!-- MAIN SECTION ENDS -->

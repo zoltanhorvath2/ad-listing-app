@@ -5,7 +5,10 @@ class Ads extends Controller
 
   public function index(): void
   {
-    $this->view('pages/advertisements');
+
+    $data['page_title'] = 'Ads';
+
+    $this->view('pages/advertisements', $data);
   }
 
 }

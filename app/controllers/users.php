@@ -8,7 +8,9 @@ class Users extends Controller
 
     $users = $this->loadModel('User');
 
-    $this->view('pages/users');
+    $data['page_title'] = 'Users';
+
+    $this->view('pages/users', $data);
   }
 
 }
