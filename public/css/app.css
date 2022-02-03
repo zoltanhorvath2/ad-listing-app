@@ -7,8 +7,6 @@
   background-color: whitesmoke;
 }
 
-
-
 /* Navbar styles */
 
 #main_navbar {
@@ -21,8 +19,14 @@
   background-color: rgb(174, 197, 219);
 }
 
+#main-navbar a {
+  text-decoration: none;
+  color: black;
+}
+
 .ad-icon{
   font-size: 40px;
+  color: black;
   background-color: rgb(174, 197, 219);
 }
 

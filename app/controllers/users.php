@@ -8,7 +8,7 @@ class Users extends Controller
 
     $users = $this->loadModel('User');
 
-    $this->view('users');
+    $this->view('pages/users');
   }
 
 }
