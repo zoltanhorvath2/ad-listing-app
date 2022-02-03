@@ -2,7 +2,7 @@
 
 class Controller 
 {
-  public function view(string $view): void
+  public function view(string $view, array $data = []): void
   {
     if(file_exists('../app/views/' . $view . '.php'))
     {
