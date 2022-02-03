@@ -20,16 +20,20 @@ class Model
     $stmt = $db->prepare($query);
     $check = $stmt->execute($data);
     
-    if(!$check){
-      return null;
-    }else{
+    if($check){
       return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }else{
+      return null;
     }
   }
 
-  protected function write()
+  protected function write(string $query, array $data = []): bool
   {
+    $db = $this->connection;
+    $stmt = $db->prepare($query);
+    $check = $stmt->execute($data);
     
+    return (bool)$check;
   }
   
 }

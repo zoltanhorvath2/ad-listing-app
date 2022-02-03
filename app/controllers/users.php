@@ -7,7 +7,6 @@ class Users extends Controller
   {
 
     $users = $this->loadModel('User');
-    var_dump($users->getAllUsers());
 
     $this->view('users');
   }
