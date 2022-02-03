@@ -3,7 +3,7 @@
 class Users extends Controller
 {
 
-  public function index()
+  public function index(): void
   {
 
     $users = $this->loadModel('User');
