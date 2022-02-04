@@ -8,7 +8,9 @@
         <?= $data['page_title']; ?>
       </h2>
       <div class="main-content-container">
-        Welcome to our system
+        <h3>
+          Welcome to our system!
+        </h3>
       </div>
     </section>
 

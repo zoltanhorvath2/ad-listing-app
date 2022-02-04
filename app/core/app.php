@@ -12,7 +12,7 @@ class App
   *
   * @var string|object
   */
-  private $controller = 'home';
+  private $controller = 'Home';
   /**
   * Stores the required method name
   *
@@ -32,9 +32,9 @@ class App
   public function __construct()
   {
     $url = $this->getURL();
-    if(file_exists('../app/controllers/' . strtolower($url[0]) . 'Controller.php'))
+    if(file_exists('../app/controllers/' . ucfirst($url[0]) . 'Controller.php'))
     {
-      $this->controller = strtolower($url[0]);
+      $this->controller = ucfirst($url[0]);
       unset($url[0]);
     }
     require '../app/controllers/' . $this->controller . 'Controller.php';
@@ -60,7 +60,7 @@ class App
    */
   private function getURL(): array
   {
-    $url = isset($_GET['url']) ? $_GET['url'] : $_GET['url'] = 'home';
+    $url = isset($_GET['url']) ? $_GET['url'] : $_GET['url'] = 'Home';
     return explode('/', filter_var(trim($url, '/'), FILTER_SANITIZE_URL));
   }
 

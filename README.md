@@ -1,4 +1,4 @@
-# ad-listing-app
+# Ad Listing App
 This is a small MVC structured application using no frameworks at all (CSS, PHP, MySQL)
 
 Installation guide for Advertisement Listing App:
@@ -18,3 +18,4 @@ Installation:
 - Open your mysql from command line or phpmyadmin (for example http://localhost:70/phpmyadmin)
 - Create a database named ‘ad_listing_app’ and import database from ad_listing_app.sql in root folder or run the queries manually
 - Open the project on the correct port in your browser (for example: http://localhost:70/ad-listing-app/public/)
+
