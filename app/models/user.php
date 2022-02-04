@@ -5,7 +5,7 @@ class User extends Model
   
   public function getAllUsers(): ?array
   {
-    return $this->read('SELECT * FROM users');
+    return $this->read('SELECT * FROM users ORDER BY id ASC');
   }
 
   public function addUser($username): bool

@@ -3,8 +3,13 @@
 
     <!-- MAIN SECTION -->
 
-    <section>
-      <?= $data['page_title']?>
+    <section class="main-section">
+      <h2>
+        <?= $data['page_title']; ?>
+      </h2>
+      <div class="main-content-container">
+        Welcome to our system
+      </div>
     </section>
 
     <!-- MAIN SECTION ENDS -->

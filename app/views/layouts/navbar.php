@@ -2,7 +2,7 @@
   
   <!-- CONTENT WRAPPER -->
 
-  <div>
+  <div class="body-wrapper">
 
    <!-- NAVBAR -->
 
@@ -18,3 +18,4 @@
     </nav>
 
     <!-- NAVBAR ENDS -->
+    

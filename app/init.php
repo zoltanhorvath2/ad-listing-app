@@ -1,8 +1,8 @@
 <?php
 
 require '../app/core/config.php';
-require '../app/core/controller.php';
-require '../app/core/database.php';
-require '../app/core/model.php';
+require '../app/core/Controller.php';
+require '../app/core/Database.php';
+require '../app/core/Model.php';
 require '../app/core/helpers.php';
-require '../app/core/app.php';
+require '../app/core/App.php';

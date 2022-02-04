@@ -7,8 +7,10 @@ class Users extends Controller
   {
 
     $users = $this->loadModel('User');
+    $allUsers = $users->getAllUsers();
 
     $data['page_title'] = 'Users';
+    $data['all_users']  = $allUsers; 
 
     $this->view('pages/users', $data);
   }
