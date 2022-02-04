@@ -5,7 +5,10 @@ class Home extends Controller
 
   public function index(): void
   {
-    $this->view('home');
+
+    $data['page_title'] = 'Home';
+
+    $this->view('pages/home', $data);
   }
 
 }
