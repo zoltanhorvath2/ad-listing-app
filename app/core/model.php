@@ -1,10 +1,18 @@
 <?php
-
+/**
+ * This class is inherited by every other models
+ */
 class Model
 { 
-
+  /**
+   * This property stores our database connection
+   * 
+   * @var object
+   */
   private object $connection;
-
+  /**
+   * Constructor sets the database connection
+   */
   public function __construct()
   {
     $db = Database::getInstance();
@@ -13,7 +21,15 @@ class Model
     $this->connection = $dbc;
 
   }
-
+  /**
+   * This function makes all the similar reading operations from the database
+   * 
+   * @param string
+   * 
+   * @param array
+   * 
+   * @return array|null
+   */
   protected function read(string $query, array $data = []): ?array
   {
     $db = $this->connection;
@@ -26,7 +42,15 @@ class Model
       return null;
     }
   }
-
+  /**
+   * This function makes all the similar writing operations to the database
+   * 
+   * @param string
+   * 
+   * @param array
+   * 
+   * @return bool
+   */
   protected function write(string $query, array $data = []): bool
   {
     $db = $this->connection;

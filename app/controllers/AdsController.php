@@ -2,7 +2,12 @@
 
 class Ads extends Controller
 {
-
+  
+  /**
+  * Loads the page with required data from database
+  *
+  * @return void
+  */
   public function index(): void
   {
 
