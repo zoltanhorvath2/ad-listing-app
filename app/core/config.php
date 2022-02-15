@@ -6,11 +6,11 @@ define('APP_NAME', 'Ad listing app');
 /**
  * Set database credentials
  */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'mysql8');
 define('DB_TYPE', 'mysql');
-define('DB_NAME', 'ad_listing_app');
+define('DB_NAME', 'ad_handler_app');
 define('DB_USER', 'root');
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'root');
 /**
  * Set protocol type
  */
